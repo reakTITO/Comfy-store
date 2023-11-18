@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  th {
+    @apply px-4 py-2 text-sm text-dark_gray dark:text-slate-400;
+  }
+  td {
+    @apply px-4 py-4 text-sm text-slate-600 dark:text-slate-200;
+  }
+  tbody tr {
+    @apply even:bg-light_gray dark:even:bg-dark;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply xl:px-0 px-8;
+  }
+
+  .form-control {
+    @apply mt-2 rounded-lg py-[2px] px-2 border text-slate-600 focus:outline-none dark:border-slate-500 dark:text-slate-200 dark:bg-gray-800;
+  }
+
+  .form-label {
+    @apply text-sm text-slate-600 dark:text-slate-200;
+  }
+
+  .btn-page {
+    @apply bg-light_gray dark:bg-dark uppercase font-medium text-sm text-dark_gray dark:text-slate-200 p-3 first:rounded-s-lg
+    last:rounded-e-lg hover:bg-slate-400 dark:hover:bg-black;
+  }
+
+  .opt {
+    @apply dark:bg-gray-800 dark:text-slate-200;
+  }
+}
